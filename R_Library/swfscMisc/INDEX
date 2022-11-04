@@ -1,0 +1,27 @@
+affin.prop              Affinity Propagation
+bearing                 Calculate Bearing Between Two Positions
+box.area                Area of a Box
+central.quantile        Central Quantile
+circle.polygon          Circle Polygon (on Earth)
+color.name              Color Name
+convert.angle           Angle Conversion
+convert.distance        Distance Conversion
+copy.tri                Copy Matrix Triangles
+datum                   Datum
+destination             Destination on Sphere or Ellipsoid
+distance                Distance Between Coordinates
+eiaMisc                 Set of miscellaneous functions
+geometric.mean          Geometric Mean
+harmonic.mean           Harmonic Mean
+invLogOdds              Odds Conversion
+lat.lon.axes            Latitude and Longitude axes
+lat.lon.list            Get List of Latitude and Longitude Coordinates
+mail                    Mail
+na.count                Count NAs
+normalize               Normalize a Numeric Vector
+one.arg                 One Argument
+row.col.page.fit        Number of Rows and Columns on Page
+sample.map              Plot Samples on World Map
+scatterdens             Scatter Plot with Density Margins
+uniform.test            Uniform Distribution Test
+zero.pad                Zero Pad Integers

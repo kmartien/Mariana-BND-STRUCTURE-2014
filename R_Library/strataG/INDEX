@@ -1,0 +1,108 @@
+align.clustal           CLUSTAL Alignment
+align.folder            Align Sequences in a Folder
+align.mafft             MAFFT Alignment
+allele.freq.format      Compiles and Formats Allele Frequencies
+allele.freqs            Allele Frequencies
+allele.split            Split Alleles For Diploid Data
+allelic.richness        Allelic Richness
+analysis.list           Population Differentiation Tests
+as.data.frame.gtypes    Coerce to a Data Frame
+as.dna.seq              Format List of DNA Sequences
+as.matrix.gtypes        Coerce to a Matrix
+base.freqs              Calculate Nucleotide Frequencies
+bowhead.snp.position    Bowhead Whale SNP Genotype Groups
+bowhead.snps            Bowhead Whale SNP Genotypes
+check.gtypes            Create a gtypes object
+clumpp.run              Run CLUMPP
+create.consensus        Create Consensus Sequence
+decode                  Decode 'gtypes'
+diversity               Unbiased Estimate of Diversity
+dolph.haps              Dolphin mtDNA Haplotype Sequences
+dolph.msats             Dolphin Microsatellite Genotypes
+dolph.seqs              Dolphin mtDNA Sequences
+dolph.strata            Dolphin Genetic Stratification and hHplotypes
+exptd.het               Expected Heterozygosity
+fastsimcoal.run         Run FASTSIMCOAL
+fisher.method.p         Fisher's Method P-value
+fixed.differences       Fixed Base Pair Differences Between Strata
+fixed.sites             Fixed Sites Among Sequences
+fst.to.nm               Calculate Nm from Fst
+gelato.plot             Plot GELATo results
+gelato.run              GELATo - Group ExcLusion and Assignment Test
+gen.data.from.freq      Convert Haplotype Frequency Matrices
+genepop.run             Run GENEPOP
+gtype.struct.func       Population Structure Statistic Functions
+h.stats                 Estimate Fixation Indices
+hap.freqs               Haplotype Frequencies
+haplotypic.diversity    Haplotypic Diversity
+hwe.genepop             Hardy-Weinberg Equilibrium
+is.diploid              Check Ploidy
+is.gtype.struct.func    Check Population Structure Function
+is.ti.tv                Transition / Transversion Ratio
+iupac.code              IUPAC Code
+iupac.mat               IUPAC Codes
+jack.hwe                Hardy-Weinberg Equlibrium Jackknife
+jmodeltest.run          Run jModelTest
+label.haplotypes        Find and label haplotypes
+linkage.genepop         Linkage Disequlibrium
+locus.cols              Helper Functions to Extract Locus Information
+merge.gtypes            Merge gtypes
+most.distant.sequences
+                        Most distant sequences
+na.omit.gtypes          Omit NAs in gtypes object
+nei.Da                  Nei's Da
+nucleotide.divergence   Nucleotide Divergence
+nucleotide.diversity    Nucleotide Diversity
+num.alleles             Number of Alleles
+num.alleles.shared      Number of Shared Alleles
+num.gens.eq             Calculate Number of Generations to Equilibrium
+num.missing             Calculate Number of Individuals With Missing
+                        Data
+obsvd.het               Observed Heterozygosity
+p.val                   Permutation Test P-value
+pairwise.shared.loci    Calculate Pairwise Shared Loci
+pct.unique.haplotypes   Percent Unique Haplotypes
+phase.filter            Run PHASE
+print.gtypeSummary      Print gtypeSummary
+read.fasta              Read FASTA
+read.gen.data           Read Genetic Data
+read.mega               Read MEGA
+relabel.sequences       Relabel Sequences
+restratify              Restratify gtypes
+sequence.Da             Calculate Da
+sim.gamma.haps          Simulates Haplotypes
+stat.chi2               CHI-squared Analysis of Population Structure
+stat.d.jost             Jost's D Estimate of Population Divergence
+stat.fst                Fst Analysis of Population Structure
+stat.fst.prime          F'st analysis of population structure
+stat.gst                Gst Analysis of Population Structure
+stat.gst.dbl.prime      G"st Analysis of Population Structure
+stat.gst.prime.hedrick
+                        Hedrick's G'st Analysis of Population Structure
+stat.gst.prime.nei      Nei's G'st Analysis of Population Structure
+stat.phist              PHIst Analysis of Population Structure
+stopifnot.gtype.struct.func
+                        Check gtype Population Structure Function
+strata.split            Split Strata
+strataG-package         Summaries and population structure analyses of
+                        haplotypic and genotypic data
+structure.evanno        Run Evanno Method on STRUCTURE Results
+structure.parse.q.mat   Parse Q-Matrix Text
+structure.plot          Plot STRUCTURE Results
+structure.read          Run STRUCTURE
+subset.gtypes           Subset a gtypes object
+summarize.loci          Locus Summaries
+summarize.sequences     DNA Sequence Summaries
+summary.gtypes          Summarize gtypes object
+tajimas.d               Calculate Tajima's D
+theta                   Theta
+ti.tv.mat               Transition/Transversion matrix
+trim.ns                 Trim N's From Sequences
+valid.iupac.codes       Valid IUPAC Codes
+variable.sites          Variable Sites Among Sequences
+wright.fst              Wright's Fst
+write.MEGA              Write MEGA File
+write.arlequin          Write Arlequin File
+write.fasta             write.fasta
+write.gtypes            write.gtypes
+write.snapp.nexus       Write NEXUS File for SNAPP

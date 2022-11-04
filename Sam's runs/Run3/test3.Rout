@@ -1,0 +1,209 @@
+
+R version 3.0.2 (2013-09-25) -- "Frisbee Sailing"
+Copyright (C) 2013 The R Foundation for Statistical Computing
+Platform: x86_64-unknown-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> rm(list = ls())
+> library("eiaMisc", lib.loc="../../R_Library")
+> library("strataG", lib.loc="../../R_Library")
+> 
+> load("Ttru_Run3_sr.rdata")
+> 
+> # Run CLUMPP to combine runs for K = 2
+> clumpp2 <- clumpp.run(sr, k = 2)
+
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+CLUMPP by M. Jakobsson and N. A. Rosenberg (2007)
+              Code by M. Jakobsson
+           Version 1.1.2 (May 2009)
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+
+
+Parameter settings 
+----------------------- Main parameters -------------------------
+DATATYPE = 0
+INDFILE = indfile
+POPFILE = 
+OUTFILE = outfile
+MISCFILE = miscfile
+K = 2
+C = 193
+R = 10
+M = 1
+W = 0
+S = 1
+- Additional options for the Greedy and LargeKGreedy algorithms -
+GREEDY_OPTION = 
+REPEATS = 
+PERMUTATIONFILE = 
+----------------------- Optional outputs ------------------------
+PRINT_PERMUTED_DATA = 0
+PERMUTED_DATAFILE = 
+PRINT_EVERY_PERM = 0
+EVERY_PERMFILE = 
+PRINT_RANDOM_INPUTORDERFILE = 
+RANDOM_INPUTORDERFILE = 
+----------------------- Advanced options ------------------------
+OVERRIDE_WARNINGS = 1
+ORDER_BY_RUN = 0
+
+
+In total, 512 configurations of runs and clusters will be tested.
+
+Running... 
+----------------------------------
+Best estimate of H   Repeat number (of 512)
+-0.067243335674359   1
+-0.0672410486459827  4
+0.0659899902445537   5
+0.0660624981876622   9
+0.288097883244827    13
+0.288099065377127    21
+0.288125329361542    25
+0.599014761143224    29
+0.599044585017015    53
+0.998758100751428    61
+
+
+Results 
+----------------------------------
+The highest value of H is: 0.998758100751428
+
+The list of permutation of the clusters that produces that
+H value is (each run is on a separate row)
+1 2 
+1 2 
+1 2 
+2 1 
+2 1 
+2 1 
+2 1 
+1 2 
+1 2 
+1 2 
+
+The program finished in (days:hours:minutes:seconds)
+0:0:0:0
+
+> #print(clumpp)
+> # Plot CLUMPP results
+> structure.plot(clumpp2)
+> 
+> # Run CLUMPP to combine runs for K = 3
+> clumpp3 <- clumpp.run(sr, k = 3)
+
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+CLUMPP by M. Jakobsson and N. A. Rosenberg (2007)
+              Code by M. Jakobsson
+           Version 1.1.2 (May 2009)
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+
+
+Parameter settings 
+----------------------- Main parameters -------------------------
+DATATYPE = 0
+INDFILE = indfile
+POPFILE = 
+OUTFILE = outfile
+MISCFILE = miscfile
+K = 3
+C = 193
+R = 10
+M = 1
+W = 0
+S = 1
+- Additional options for the Greedy and LargeKGreedy algorithms -
+GREEDY_OPTION = 
+REPEATS = 
+PERMUTATIONFILE = 
+----------------------- Optional outputs ------------------------
+PRINT_PERMUTED_DATA = 0
+PERMUTED_DATAFILE = 
+PRINT_EVERY_PERM = 0
+EVERY_PERMFILE = 
+PRINT_RANDOM_INPUTORDERFILE = 
+RANDOM_INPUTORDERFILE = 
+----------------------- Advanced options ------------------------
+OVERRIDE_WARNINGS = 1
+ORDER_BY_RUN = 0
+
+
+In total, 10077696 configurations of runs and clusters will be tested.
+
+Running... 
+----------------------------------
+Best estimate of H   Repeat number (of 10077696)
+-0.194474127704964   1
+-0.182939780674729   4
+-0.123194191139087   6
+-0.0180880183271611  7
+0.0108505113631383   10
+0.0873180271005816   12
+0.116687565664084    118
+0.17216807300162     120
+0.262983590895936    192
+0.299339362013605    766
+0.333793396042139    768
+0.403622967623736    840
+0.403770724150107    1200
+0.50911511954704     1272
+0.516361580188117    112240
+0.650051607940795    561144
+0.679237333913263    2576165
+0.679253784916038    7781450
+0.711595546965567    8061170
+0.711767081888755    8061350
+0.835902270833223    8061386
+0.836010931086937    8341286
+0.99563708970471     8341322
+
+
+Results 
+----------------------------------
+The highest value of H is: 0.99563708970471
+
+The list of permutation of the clusters that produces that
+H value is (each run is on a separate row)
+1 2 3 
+1 3 2 
+2 1 3 
+1 3 2 
+1 3 2 
+3 1 2 
+3 1 2 
+3 1 2 
+3 2 1 
+3 1 2 
+
+The program finished in (days:hours:minutes:seconds)
+0:0:16:12
+
+> #print(clumpp)
+> # Plot CLUMPP results
+> structure.plot(clumpp3)
+> 
+> save.image("Ttru_Run3_test.rdata")
+> 
+> proc.time()
+   user  system elapsed 
+974.411   0.091 974.628 
